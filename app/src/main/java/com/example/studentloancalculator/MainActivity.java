@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 int e= Integer.parseInt(loanFees.getText().toString());
 
 
-                int calculation = (a*b/100*c);
-                int calculation2 = (d*b/100*c + e);
+                double calculation = (a*Math.pow((1+b/100),c))/(c*12);
+                double calculation2 = calculation*(c*12)+e;
                mPayment.setText(""+calculation);
                totalPayment.setText(""+calculation2);
             }
