@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 double calculation = (a*Math.pow((1+b/100),c))/(c*12);
-                double calculation2 = calculation*(c*12)+e;
+                double calculation2 = calculation*(c*12)+e-a;
                mPayment.setText(""+calculation);
                totalPayment.setText(""+calculation2);
             }
